@@ -22,6 +22,8 @@ let obj3 = {
     genre: 'science fiction'
 }
 
+console.log(obj1, obj2, obj3)
+
 // Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
 
 let book1 = {
@@ -44,6 +46,8 @@ let book3 = {
     genre: 'adventure',
     authors: [{name: 'Aleksandr Duma', age: 68}]
 }
+
+console.log(book1, book2, book3)
 
 // Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
