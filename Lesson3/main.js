@@ -93,7 +93,6 @@ for (const product of products) {
 }
 
 // Task 7 По даним масива вивести за допомоги циклу вивести:
-//  - користувачів які старші за 30 років
 
 let users = [
     {name: 'vasya', age: 31, status: false},
