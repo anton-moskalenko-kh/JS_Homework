@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .user-form {
+        margin-bottom: 30px;
+    }
+    .user-block {
+        background-color: cadetblue;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .number-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 100px;
+        background-color: cornflowerblue;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .user-section {
+        margin-top: 10px;
+    }
+
+    .button{
+        padding: 5px;
+        width: 100px;
+        background-color: darkgreen;
+        color: white;
+        border: 1px solid darkgreen;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .object {
+        margin-bottom: 10px;
+        background-color: blanchedalmond;
+        width: 200px;
+    }
+
+    .elem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 100px;
+        background-color: cadetblue;
+        margin-bottom: 10px;
+    }
+    .hidden {
+        display: none;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+<section class="user-form">
+    <div>************* TASK 1 *************</div>
+    <form action="#">
+        <label for="name"> Enter your name
+            <input type="text" name="username" id="name">
+        </label>
+
+        <label for="surname"> Enter surname
+            <input type="text" name="surname" id="surname">
+        </label>
+
+        <label for="age"> Enter your age
+            <input type="number" name="age" id="age">
+        </label>
+
+        <button class="create-user">Create User Block</button>
+    </form>
+</section>
+
+<div>************* TASK 2 *************</div>
+<div class="number-block">
+    <span class="number"></span>
+</div>
+
+<div>************* TASK 4 *************</div>
+<div class="user-section">
+    <button class="next button">NEXT</button>
+    <button class="prev button">PREV</button>
+    <div class="object-block">
+
+    </div>
+</div>
+
+<div>************* TASK 5 *************</div>
+<button class="hide-button button">HIDE | SHOW</button>
+<div id="text" class="elem">Hello</div>
+
+<div>************* TASK 6 *************</div>
+<form action="" name="check-age">
+    <label for="check-age"> Enter your age
+        <input type="number" name="age" id="check-age">
+    </label>
+    <button>Check Age</button>
+</form>
+
+<div>************* TASK 7 *************</div>
+<form action="" name="table">
+    <label for="rows"> Enter number of rows
+        <input type="text" name="rows" id="rows">
+    </label>
+    <label for="сolumns"> Enter number of column
+        <input type="number" name="columns" id="сolumns">
+    </label>
+    <label for="content"> Enter сontent of cells
+        <input type="text" name="content" id="content">
+    </label>
+    <button>Create table</button>
+</form>
+<table class="table-block"></table>
+
+
+<script src="main.js"></script>
+</body>
+</html>
