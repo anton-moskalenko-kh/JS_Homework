@@ -7,9 +7,9 @@ let currencyBlock = document.querySelector('.currency-block')
 let currency = JSON.parse(localStorage.getItem('currency')) || 100;
 currencyBlock.innerHTML = `${currency} грн`
 
+let currentTime = new Date().getTime();
 let lastReloadTime = localStorage.getItem("lastReloadTime") || currentTime;
 
-let currentTime = new Date().getTime();
 let timeDiff = currentTime - lastReloadTime;
 if (timeDiff >= 10000) {
     currencyBlock.innerText = `${currency += 10} грн`
